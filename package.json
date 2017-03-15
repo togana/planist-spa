@@ -11,7 +11,8 @@
     "start": "webpack-dev-server --hot --inline --progress --history-api-fallback",
     "lint": "eslint .",
     "ncu": "ncu",
-    "ncu:update": "ncu -a"
+    "ncu:update": "ncu -a",
+    "nsp": "nsp check",
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -29,6 +30,7 @@
     "eslint-plugin-react": "^6.10.0",
     "html-webpack-plugin": "^2.28.0",
     "npm-check-updates": "^2.10.3",
+    "nsp": "^2.6.3",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2",
     "webpack-manifest-plugin": "^1.1.0",
