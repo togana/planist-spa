@@ -1,10 +1,14 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { routerMiddleware } from 'react-router-redux';
 import rootReducer from '../reducers';
 
-export default function configureStoreProd(initialState) {
+export default function configureStoreProd(history, initialState) {
   const store = createStore(
     rootReducer,
     initialState,
+    applyMiddleware(
+      routerMiddleware(history),
+    ),
   );
 
   if (module.hot) {
