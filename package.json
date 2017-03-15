@@ -8,7 +8,7 @@
   "author": "togana <o.togana@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --progress --history-api-fallback",
+    "start": "webpack-dev-server --inline --progress --history-api-fallback",
     "lint": "eslint .",
     "ncu": "ncu",
     "ncu:update": "ncu -a",
