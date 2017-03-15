@@ -20,10 +20,7 @@ const common = {
     rules: [
       { test: /\.jsx?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader' },
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
-      { test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
-      },
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' },
     ],
   },
   plugins: [
@@ -55,5 +52,21 @@ if (PRODUCTION) {
     ],
   });
 } else {
-  module.exports = common;
+  module.exports = merge(common, {
+    module: {
+      rules: [
+        { test: /\.jsx?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader' },
+        { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+        {
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          use: [
+            'react-hot-loader',
+            'babel-loader',
+          ],
+        },
+      ],
+    },
+  });
 }
+
