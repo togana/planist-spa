@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
+import TemplateDefault from '../../Templates/Default';
 
 class NotFound extends Component {
   render() {
     return (
-      <div>
-        <Link to={'/'}>top</Link>
-        <Link to={'/notfound'}>notfound</Link>
-      </div>
+      <TemplateDefault>
+        <p>
+          存在しないページ
+        </p>
+      </TemplateDefault>
     );
   }
 }

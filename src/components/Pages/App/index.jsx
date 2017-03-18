@@ -1,15 +1,18 @@
 import React, { Component, PropTypes } from 'react';
+import TemplateDefault from '../../Templates/Default';
 
 class App extends Component {
   render() {
     const { isAction, toggleAction } = this.props;
     return (
-      <div>
-        <h1>isAction: {isAction.toString()}</h1>
-        <button onClick={toggleAction.toggle}>
-          toggle
-        </button>
-      </div>
+      <TemplateDefault>
+        <div>
+          <h1>isAction: {isAction.toString()}</h1>
+          <button onClick={toggleAction.toggle}>
+            toggle
+          </button>
+        </div>
+      </TemplateDefault>
     );
   }
 }
