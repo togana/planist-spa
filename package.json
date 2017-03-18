@@ -17,13 +17,13 @@
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.0",
-    "babel-preset-env": "^1.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
     "babel-preset-react": "^6.23.0",
     "chunk-manifest-webpack-plugin": "^1.0.0",
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.27.3",
-    "eslint": "^3.17.1",
+    "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-loader": "^1.6.3",
     "eslint-plugin-import": "^2.2.0",
@@ -39,10 +39,10 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2",
     "webpack-manifest-plugin": "^1.1.0",
-    "webpack-merge": "^4.0.0"
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "history": "^4.6.0",
+    "history": "^4.6.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
