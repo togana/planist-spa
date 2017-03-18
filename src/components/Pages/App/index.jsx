@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import DevTools from '../../../utils/DevTools';
 
 class App extends Component {
   render() {
@@ -10,7 +9,6 @@ class App extends Component {
         <button onClick={toggleAction.toggle}>
           toggle
         </button>
-        {(process.env.NODE_ENV === 'production') ? null : <DevTools />}
       </div>
     );
   }

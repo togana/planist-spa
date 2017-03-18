@@ -8,6 +8,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import App from './containers/App';
 import NotFound from './containers/NotFound';
 import configureStore from './store/configureStore';
+import DevTools from './utils/DevTools';
 
 const history = createHistory();
 const store = configureStore(history);
@@ -15,10 +16,13 @@ const store = configureStore(history);
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route component={NotFound} />
-      </Switch>
+      <div>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route component={NotFound} />
+        </Switch>
+        {(process.env.NODE_ENV === 'production') ? null : <DevTools />}
+      </div>
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root'),
