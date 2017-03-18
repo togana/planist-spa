@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import NotFound from '../../components/NotFound';
+import NotFound from '../../components/Pages/NotFound';
 
 function mapStateToProps(state) {
   return state;

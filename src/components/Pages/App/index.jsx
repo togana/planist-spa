@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import DevTools from '../../utils/DevTools';
+import DevTools from '../../../utils/DevTools';
 
 class App extends Component {
   render() {
@@ -21,4 +21,4 @@ App.propTypes = {
   toggleAction: PropTypes.object.isRequired,
 };
 
-module.exports = App;
+export default App;

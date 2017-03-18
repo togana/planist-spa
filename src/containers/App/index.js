@@ -2,7 +2,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import * as exsampleAction from '../../actions/exsample';
-import App from '../../components/App';
+import App from '../../components/Pages/App';
 
 function mapStateToProps(state) {
   return state.exsample;
